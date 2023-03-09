@@ -1,0 +1,250 @@
+body{
+  background: lightskyblue;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  border: 5px solid black;
+  align-items: center;
+  background: whitesmoke;
+  box-shadow: black;
+}
+
+#todo{
+  font-size: 12px;
+  margin-top: -25px;
+  border: 5px black;
+  background: black; 
+  color: white;   
+  font-family: 'Raleway', sans-serif;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 20px;
+  
+}
+
+#heading{
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  margin-top: -25px;
+}
+
+
+.inputBox{
+  display: flex;
+
+}
+.button{
+  background: black;
+  color: white;
+  height: 25px;
+  color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+  width: 50px;
+  border: 2px solid rgb(253, 243, 253) ;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#myList{
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  /* line-height: 45px; */
+  list-style: none;
+  margin-left: 10px;    
+}
+.listContainer{
+  margin-top: 20px;
+  width: 400px;
+  /* border: 5px solid brown; */
+}
+
+#myList li{
+  /* border: 5px solid brown; */
+  margin-right: 50px;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+input{
+  width: 200px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+
+}
+#myList li:hover{
+  background: black; 
+  color: white;
+  /* width: 400px; */
+}
+#myList li.checked{
+  text-decoration: line-through;
+  background: black;
+  color: white;
+}
+#myList li.checked:hover{
+  background: black; 
+  color: white;
+  /* width: 400px; */
+}
+.cancel{
+  font-size:25px ;
+  text-align: right;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* border: 5px solid brown; */
+  width: 18px;
+  margin-left: -30px;
+  margin-top: 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 1080px){
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  #container{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vh;
+  border: 5px solid whitesmoke;
+  align-items: center;
+  background: whitesmoke;
+  box-shadow: black 0px 0px 50px;
+  }
+
+  #todo{
+      font-size: 12px;
+      margin-top: -15px;
+      border: 5px solid black;
+      background: black; 
+      color: white;   
+      font-family: 'Raleway', sans-serif;
+      padding-right: 15px;
+      padding-left: 15px;
+      border-radius: 20px;
+      
+  }
+
+  #heading{
+      font-family: 'Dancing Script', cursive;
+      font-size: 15px;
+      margin-top: 15px;
+  }
+
+
+  .inputBox{
+      margin-top: 35px;
+      display: flex;
+
+  }
+  input{
+      width: 175px;
+      font-size: 16px;
+      font-family: 'Raleway', sans-serif;
+  }
+  .button{
+      background: rgb(231, 226, 231);
+      height: 30px;
+      color: white;
+      font-size: 15px;
+      font-family: 'Raleway', sans-serif;
+      margin-left: 13px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 2px;
+      width: 50px;
+      border: 3px solid rgb(230, 221, 230) ;
+      border-radius: 15px;
+      cursor: pointer;
+  }
+
+  #myList{
+      font-size: 20x;
+      font-family: 'Raleway', sans-serif;
+      /* line-height: 45px; */
+      list-style: none;
+      margin-left: 10px;
+      padding-bottom: 45px; 
+      padding-left: 20px;   
+  }
+  .listContainer{
+      margin-top: 20px;
+      width: 400px;
+      /* border: 5px solid brown; */
+  }
+
+  #myList li{
+      /* border: 5px solid brown; */
+      margin-right: 75px;
+      margin-left: 40px;
+      padding: 10px;
+      transition: background-color 0.3s, color 0.3s;
+      cursor: pointer;
+      position: relative;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+  }
+
+  #myList li:hover{
+      background: black; 
+      color: white;
+      /* width: 400px; */
+  }
+  #myList li.checked{
+      text-decoration: line-through;
+      background: black;
+      color: white;
+  }
+  #myList li.checked:hover{
+      background:black; 
+      color: white;
+      /* width: 400px; */
+  }
+  .cancel{
+      font-size:25px ;
+      text-align: right;
+      left: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      /* border: 5px solid brown; */
+      width: 18px;
+      margin-left: -30px;
+      margin-top: 5px;
+  }
+}
+
+/* optimising for phone */
